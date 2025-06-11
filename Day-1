@@ -1,0 +1,21 @@
+** Day - 1 **
+Problem Name : Merge Sorted Array [Leetcode 88  (link: https://leetcode.com/problems/merge-sorted-array/?envType=study-plan-v2&envId=top-interview-150)]
+
+Solution : (Python)
+
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+        for i in range(n):
+            nums1[m+i]=nums2[i]
+        nums1.sort()
+
+Solution : (Java)
+
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        for(int i=0; i<n;i++){
+            nums1[m+i]=nums2[i];
+        }
+        Arrays.sort(nums1);
+    }
+}
